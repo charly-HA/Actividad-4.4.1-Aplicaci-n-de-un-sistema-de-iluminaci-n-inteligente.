@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    background-color: #757575;
+    color: black;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+#Apagador{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+
+}
+nav ul{
+    text-align: right;
+    background-color: black;
+    width: 100%;
+    font-size:medium;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+
+}
+nav li:hover { 
+    background-color: black;
+}
+.izquierda{
+    background: black;
+    height: 100vh;
+    width: 50%;
+
+}
+.derecha{
+    background: url(Luz.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+}
+#pantalla-dividida{
+    display: flex;
+}
+
+@media only screen and (max-width: 600px){
+    #pantalla-dividida{
+        display: none;
+    }
+}

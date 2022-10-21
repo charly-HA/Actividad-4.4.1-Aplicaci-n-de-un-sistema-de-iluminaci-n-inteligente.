@@ -1,0 +1,48 @@
+<!DOCTYPE html><!-- Esto es un comentaario-->
+<html lang="en"><!--Se especialisa para el lenguaje del programa-->
+<!--Entrada-->
+<head><!--Informacion necesaria para que la página se despliege-->
+    <meta charset="UTF-8"><!--Se especifica que codigo se utilizara-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Compatibilidad con los navegadores-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Es para que se pueda ver en cualquier dispositivo-->
+    <title>TAREA2_A01709413</title><!--Titulo de la pestaña del navegadr-->
+    <link rel="stylesheet" type="text/css" href="./Luz_estilo.css">
+</head>
+<body><!---Contenido de la pagina Web-->
+    <h1>ÁREAS DE LA CASA</h1>
+    <nav>
+        <ul>
+            <li><a href="">HABITACIONES</a></li>
+            <li><a href="Sala.html">SALA</a></li>
+            <li><a href="Comedor.html">COMEDOR</a></li>
+            <li><a href="Garage.html">GARAGE</a></li>
+            <li><a href="Roof Garden.html">ROOF GARDEN</a></li>
+            <li><a href="Sala de Juegos.html">SALA DE JUEGOS</a></li>
+            <li><a href="Alberca.html">ALBERCA</a></li>
+            <li><a href="Cancha de tenis.html">CANCHA TENIS</a></li>
+        </ul>
+    </nav>
+<section id="pantalla-dividida">
+
+    <div class="izquierda">
+        <h2>ALBERCA</h2>
+        <img src="Luz del foco.png" alt="Luz del foco">
+        <img src="images.jpg" onclick="cambioImage()" alt="Interruptor" id="Apagador">
+    
+    </div>
+    <div class="derecha"></div>
+
+</section>
+<script>
+    function cambioImage(){
+        var foco = document.getElementById('Apagador');
+        if(foco.src.match("images2")){
+            foco.src="images.jpg";
+        }
+        else {
+            foco.src="images2.jpg";
+        }
+    };
+</script>
+</body>
+</html> 
